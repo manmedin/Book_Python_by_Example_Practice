@@ -1,7 +1,7 @@
 
 ########IF STATEMENT#####
 
-######Chalange 015#######
+######challenges 015#######
 # fav_col = input('Enter your favourite color: ')
 # if fav_col.lower() == 'red':
 # 	print('I lke red too')
@@ -14,7 +14,7 @@
 # que sera tomado como ejemplo'''
 # print (mensaje)
 
-#########Chalange 026########
+#########challenges 026########
 #si tengo 'pen' sera'enpay' si tengo 'ana' sera 'anaway'
 # base_word = ('OTHER')
 # fir_let = base_word[0].lower() #get the first letter's word
@@ -35,31 +35,31 @@
 # print (7%2)
 # print (int(7/2))
 
-########chalange 027,028######
+########challenges 027,028######
 # number = float(input('Enter a number with many decimal digits: '))
 # print (round(2*number,2))
 
-########chalange 029######
+########challenges 029######
 # number = float(input('Enter a number greater than 500: '))
 # if number < 500 :
 # 	print ('You must enter a number greater than 500!!, please try again')
 # else :
 # 	print ('Square root of ' + str(number) + ' is '+ str(round(math.sqrt(number),2)))
 
-########chalange 031######
+########challenges 031######
 # import math
 # r = 4.
 # cir_are = round(math.pi*r**2,3)
 # print (cir_are)
 
-########chalange 033######
+########challenges 033######
 # n1 = int(input('Enter the first number to divide: '))
 # n2 = int(input('Enter the second number to divide: '))
 # D = int(n1/n2)
 # R = n1%n2
 # print(str(n1) + ' divided by ' + str(n2) + ' is ' + str(D) + ' with ' + str(R) + ' remaining.' )
 
-#######chalange 034 ########
+#######challenges 034 ########
 # while True:
 # 	print('\n-----------------AREA CALCULATION---------------')
 # 	print('\t1) Square')
@@ -83,7 +83,7 @@
 # 	if salir != 'y':
 # 		break
 
-#######chalange 037,038########
+#######challenges 037,038########
 # name = 'manuel'
 # times = 4
 # for t in range(0,times):
@@ -91,20 +91,20 @@
 # 		print (i)
 
 
-#########chalange 039##########
+#########challenges 039##########
 # print('XXXXXXXXXX MULTIPLY TABLE XXXXXXXXXX')
 # table = int(input('Type the table value that you want to see: '))
 
 # for x in range(1,13):
 # 	print(str(x) + ' x ' + str(table) + ' = ' + str(x*table))
 
-#########chalange 040##########
+#########challenges 040##########
 # limit = 40
 # limit2 = limit - 1
 # for i in range(50,limit2,-1):
 # 	print(i)
 
-#########chalange 042##########
+#########challenges 042##########
 # total = 0
 # for i in range(0,5):
 # 	add = int(input('Type a number: '))
@@ -113,7 +113,7 @@
 # 		total = total + add
 # print('\nThe suma of the total numbers previously entered is equal to: ' + str(total))
 
-######## chalange 043##########
+######## challenges 043##########
 # direction = input('Which direction up/down (u/d) do you want to count: ')
 # if direction != 'up' and direction != 'down' and direction != 'u' and direction != 'd':
 # 	print ('You type a wrong value!')
@@ -126,13 +126,13 @@
 # 	for i in range (20,bottom-1,-1):
 # 		print (i)
 
-######## chalange 046##########
+######## challenges 046##########
 # value = 0
 # while value <= 5:
 # 	value = int(input('Enter a value: '))
 # print ('lat value entered was: ' + str(value))
 
-######## chalange 047##########
+######## challenges 047##########
 # n1 = input('Enter the first number to add: ')
 # n2 = input('Enter the second number to add: ')
 # ntotal = str(n1) + str(n2)
@@ -146,7 +146,7 @@
 # 		more = 'n'	
 # print(ntotal)
 
-######## chalange 048 #########
+######## challenges 048 #########
 # guest = input('What is your name; ')
 # print(guest.title() + ' you has been invited')
 # guests = 1
@@ -159,7 +159,7 @@
 # 		more = 'n'
 # print ('Are coming ' +guest.title() + ' with '+str(guests-1) + ' friends to your party')
 
-######## chalange 049 #########
+######## challenges 049 #########
 # compnum = 50
 # attempt = 0
 # num = int(input('Try to guest the hide number: '))
@@ -173,7 +173,7 @@
 # attempt +=1
 # print ('\nWell done, you took ' + str(attempt) + ' attempts')
 
-######## chalange 051 #########
+######## challenges 051 #########
 # mes1 = 'There are '
 # mes2 = ' green bottles hanging on the wall, '
 # mes3 = ' and if 1 green bottle should accidentally fall.'
@@ -200,7 +200,7 @@
 # rancolor = random.choice(['red','blue','yellow'])
 # print(rancolor)
 
-######## chalange 054 #########
+######## challenges 054 #########
 # import random
 # machine = random.choice(['h','t'])
 # guess = input('Choice "h/t": ')
@@ -214,7 +214,7 @@
 # 	print('Computer has chosen Tails')
 
 
-######## chalange 055 #########
+######## challenges 055 #########
 # import random
 # mach = random.randint(1,5)
 # print ('machine choose ' + str(mach))
@@ -235,7 +235,7 @@
 # 	else:
 # 	 	print('You lose :-(')
 
-######## chalange 056, 057 #########
+######## challenges 056, 057 #########
 # import random
 # ranum = random.randint(1,10)
 # # print ('number of machine is: '+ str(ranum))
@@ -249,7 +249,7 @@
 # 	else:
 # 		print('too low')
 
-######## chalange 058 #########
+######## challenges 058 #########
 # import random
 # points = 0
 # for i in range(1,6):
@@ -282,7 +282,7 @@
 # 			points += 1
 # print ('You got answered '+ str(points) + ' correctly from 5 questions')
 
-######## chalange 059 #########
+######## challenges 059 #########
 # import random
 # color = random.choice(['rojo','verde','azul',])
 # eleccion = input('Escoje un color "rojo/verde/azul": ')
@@ -340,28 +340,28 @@
 # turtle.end_fill()    # ----> end for filling final shape
 # scr.exitonclick()
 
-######## chalange 060 #########
+######## challenges 060 #########
 # import turtle
 # for i in range(0,4):
 # 	turtle.forward(200)
 # 	turtle.right(90)
 # turtle.exitonclick()
 
-######## chalange 061 #########
+######## challenges 061 #########
 # import turtle
 # for i in range(0,3):
 # 	turtle.forward(200)
 # 	turtle.left(120)
 # turtle.exitonclick()
 
-######## chalange 062 #########
+######## challenges 062 #########
 # import turtle
 # for i in range(0,360):
 # 	turtle.forward(3)
 # 	turtle.left(1)
 # turtle.exitonclick()
 
-######## chalange 063 #########
+######## challenges 063 #########
 # import turtle
 # colors = ['red','yellow','purple']
 # turtle.penup()
@@ -377,14 +377,14 @@
 
 # turtle.exitonclick()
 
-######## chalange 064 #########
+######## challenges 064 #########
 # import turtle
 # for i in range (0,5):
 # 	turtle.forward(100)
 # 	turtle.right(144)
 # turtle.exitonclick()
 
-######## chalange 065 #########
+######## challenges 065 #########
 # import turtle
 # #doing 1
 # turtle.left(90)
@@ -425,7 +425,7 @@
 # turtle.hideturtle()
 # turtle.exitonclick()
 
-######## chalange 066 #########
+######## challenges 066 #########
 # import turtle
 # import random
 # for i in range(0,8):
@@ -436,7 +436,7 @@
 # turtle.hideturtle()
 # turtle.exitonclick()
 
-######## chalange 067 #########
+######## challenges 067 #########
 # import turtle
 # for i in range (0,10):
 # 	for i in range(0,8):
@@ -445,7 +445,7 @@
 # 	turtle.right(36)
 # turtle.exitonclick()
 
-######## chalange 068 #########
+######## challenges 068 #########
 # import turtle
 # import random
 # lines = random.randint(10,15)
@@ -476,7 +476,7 @@
 # file.write('Peru')
 # file.close()
 
-##############Chalange 106,107###########
+##############challenges 106,107###########
 # names = open('names.txt','w')
 # names.write('Alvaro\n')
 # names.write('Leandro\n')
@@ -486,7 +486,7 @@
 # names = open('names.txt','r')
 # print(names.read())
 
-##############Chalange 108##############
+##############challenges 108##############
 # names = open('names.txt','a')
 # names.write('Kalebh\n')
 # names.write('Sahir')
@@ -494,7 +494,7 @@
 # names = open('names.txt','r')
 # print(names.read())
 
-##############Chalange 109##############
+##############challenges 109##############
 # selection = int(input('1) Create a new file\n' 
 # 	     '2) Display the file\n'
 # 	     '3) Add a new item to the file\n'
@@ -522,7 +522,7 @@
 # 	file = open('Subject.txt','r')
 # 	print(file.read())
 
-##############Chalange 110 ##############
+##############challenges 110 ##############
 # file = open('names.txt','r')
 # names = file.read()
 # print (names)
@@ -543,7 +543,7 @@
 # print(file.read())
 # file.close()
 
-##############Chalange 110 v2##############
+##############challenges 110 v2##############
 #file = open('names.txt','r')
 #print(file.read())
 #file.close()
@@ -599,7 +599,7 @@
 # 	x = x + 1
 # file.close()
 
-##############Chalange 112##############
+##############challenges 112##############
 # import csv
 # newTitle =  input('Enter a new title book: ')
 # newTitle = newTitle.title()
@@ -615,7 +615,7 @@
 # 	print(row)
 # file.close()
 
-##############Chalange 113##############
+##############challenges 113##############
 # import csv
 # repeat = int(input('How new many record do you want to add: '))
 # file = open('Books.csv','a')
@@ -639,7 +639,7 @@
 # if authorexists == 0:
 # 	print("There isn't any book for the author " + authorView)
 
-##############Chalange 114##############
+##############challenges 114##############
 # import csv
 # file = csv.reader(open('Books.csv','r'))
 # yearinit = int(input('Enter the start year: '))
@@ -650,7 +650,7 @@
 # 	if date >= yearinit and date <= yearend:
 # 		print(linea[0]+ ' was wrote in ' + linea[2])
 
-##############Chalange 115##############
+##############challenges 115##############
 # import csv
 # file = csv.reader(open('Books.csv','r'))
 # cont = 1
@@ -660,7 +660,7 @@
 # 	cont += 1
 # filenew.close()
 
-##############Chalange 115 V2##############
+##############challenges 115 V2##############
 # import csv
 # file = open('Books.csv','r')
 # x = 0
@@ -669,7 +669,7 @@
 # 	x +=1
 # file.close()
 
-##############Chalange 116##############
+##############challenges 116##############
 # import csv
 # file = list(csv.reader(open('Books.csv','r')))
 # cont = 0
@@ -699,33 +699,100 @@
 # 	cont1 += 1		
 # filenew.close()
 
-##############Chalange 117##############
-import csv
+##############challenges 117##############
+# import csv
+# import random
+
+# player = str(input('Player Name: '))
+# points = 0
+# cont = 0
+# precsvlist = [player.title()]
+
+# file = open('PlayerHistorial.csv','a')
+# for i in range (0,3):
+# 	num1 = random.randint(2,10)
+# 	num2 = random.randint(8,20)
+# 	quiz = num1 * num2
+# 	strquiz = str(num1)+' x '+str(num2)
+# 	precsvlist.append(strquiz)
+# 	reply = int(input(str(num1) + ' x ' + str(num2) + ' = '))
+# 	if reply == quiz:
+# 		points += 1
+# 	precsvlist.append(reply)
+# 	cont +=1
+# precsvlist.append(points)
+# rowcsv = precsvlist[0]
+# for element in range(1,len(precsvlist)):
+# 	strelement = precsvlist[element]
+# 	rowcsv = rowcsv + ',' + str(strelement)
+# rowcsv = rowcsv + '\n'
+# file.write(rowcsv)
+# file.close()
+
+# ##############Subprogram practices##############
+# def get_name():
+# 	user_name = input('Enter your name: ')
+# 	return user_name
+
+# def print_msg(name):
+# 	print('Hellow ' + name.title() + '!!')
+
+# def main():
+# 	uname = get_name()
+# 	print_msg(uname)
+
+# main()
+
+##############challenges 118##############
+# def defnum ():
+# 	num = int(input('Enter a number: '))
+# 	return num
+
+# def count(num):
+# 	for i in range(1,num+1):
+# 		print(i)
+
+# def main():
+# 	num = defnum()
+# 	count(num)
+
+# main()
+
+##############challenges 119##############
 import random
 
-player = str(input('Player Name: '))
-points = 0
-cont = 0
-precsvlist = [player.title()]
+lownum = int(input('Choose the low number limit : '))
+highnum = int(input('Choose the high number limit: '))
 
-file = open('PlayerHistorial.csv','a')
-for i in range (0,3):
-	num1 = random.randint(2,10)
-	num2 = random.randint(8,20)
-	quiz = num1 * num2
-	strquiz = str(num1)+' x '+str(num2)
-	precsvlist.append(strquiz)
-	reply = int(input(str(num1) + ' x ' + str(num2) + ' = '))
-	if reply == quiz:
-		points += 1
-	precsvlist.append(reply)
-	cont +=1
-precsvlist.append(points)
-rowcsv = precsvlist[0]
-for element in range(1,len(precsvlist)):
-	strelement = precsvlist[element]
-	rowcsv = rowcsv + ',' + str(strelement)
-rowcsv = rowcsv + '\n'
-file.write(rowcsv)
-file.close()
+def randnumset():
+	randnum = random.randint(lownum,highnum)
+	return randnum
 
+def guessnum():
+	print('I am thinkig of a number...')
+	guess = int(input('Guess the number I am thinking: '))
+	return guess
+
+def checkguess(randnum,guess):
+	#if guess != randnum:
+	while guess != randnum:
+		if guess > randnum:
+			newguess = int(input('Too high...try again: '))
+			guess = newguess
+		elif guess < randnum:
+			newguess = int(input('Too low...try again: '))
+			guess = newguess
+		else:
+			print('You Win!!')
+
+	print ('You Win!!')
+	
+		
+def main():
+	rand_num = randnumset()
+	print('random: ' + str(rand_num)) #help to win the game, this line must be delete to chalange the player.
+	guess_num = guessnum()
+	checkguess(rand_num,guess_num)
+
+main()
+			
