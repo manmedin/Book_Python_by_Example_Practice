@@ -759,40 +759,82 @@
 # main()
 
 ##############challenges 119##############
-import random
+# import random
 
-lownum = int(input('Choose the low number limit : '))
-highnum = int(input('Choose the high number limit: '))
+# lownum = int(input('Choose the low number limit : '))
+# highnum = int(input('Choose the high number limit: '))
 
-def randnumset():
-	randnum = random.randint(lownum,highnum)
-	return randnum
+# def randnumset():
+# 	randnum = random.randint(lownum,highnum)
+# 	return randnum
 
-def guessnum():
-	print('I am thinkig of a number...')
-	guess = int(input('Guess the number I am thinking: '))
-	return guess
+# def guessnum():
+# 	print('I am thinkig of a number...')
+# 	guess = int(input('Guess the number I am thinking: '))
+# 	return guess
 
-def checkguess(randnum,guess):
-	#if guess != randnum:
-	while guess != randnum:
-		if guess > randnum:
-			newguess = int(input('Too high...try again: '))
-			guess = newguess
-		elif guess < randnum:
-			newguess = int(input('Too low...try again: '))
-			guess = newguess
-		else:
-			print('You Win!!')
+# def checkguess(randnum,guess):
+# 	#if guess != randnum:
+# 	while guess != randnum:
+# 		if guess > randnum:
+# 			newguess = int(input('Too high...try again: '))
+# 			guess = newguess
+# 		elif guess < randnum:
+# 			newguess = int(input('Too low...try again: '))
+# 			guess = newguess
+# 		else:
+# 			print('You Win!!')
 
-	print ('You Win!!')
+# 	print ('You Win!!')
 	
 		
-def main():
-	rand_num = randnumset()
-	print('random: ' + str(rand_num)) #help to win the game, this line must be delete to chalange the player.
-	guess_num = guessnum()
-	checkguess(rand_num,guess_num)
+# def main():
+# 	rand_num = randnumset()
+# 	print('random: ' + str(rand_num)) #help to win the game, this line must be delete to chalange the player.
+# 	guess_num = guessnum()
+# 	checkguess(rand_num,guess_num)
 
-main()
-			
+# main()
+
+##############challenges 120##############
+import random
+
+log = []
+print ('1) Addition')
+print ('2) Substraction')	
+execute = int(input('Enter 1 or 2: '))
+
+def addition():
+	num1 = random.randint(5,20)
+	num2 = random.randint(5,20)
+	ansum=int(input('\n' + str(num1) + ' + ' + str(num2) + ' = '))
+	log.append(ansum)
+	log.append(num1 +num2)
+	#print ('Your answer is ' + str(log[0]) + ' and the righ answer is ' + str(log[1]) )
+	return log
+
+def subsctraction():
+	num1 = random.randint(25,50)
+	num2 = random.randint(1,25)
+	ansub = int(input('\n' + str(num1) + ' - ' + str(num2) + ' = '))
+	log.insert(0,ansub)
+	log.insert(1,num1-num2)
+	return log
+
+def checkanswer():
+	if log[0] != log[1]:
+		print('Incorrect, the answer is: ' + str(log[1]))
+	else:
+		print ('Your are right...Congratulations!!')
+
+def main():
+	if execute == 1:
+		addition()
+		checkanswer()
+	elif execute ==2:
+		subsctraction()
+		checkanswer()
+	else:
+		print ('Only type 1 or 2')
+
+main()		
