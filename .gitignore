@@ -131,6 +131,9 @@ dmypy.json
 # External Files that use the main program
 *.txt
 *.csv
+<<<<<<< HEAD
 
 #Folder for debug in vscode
 .vscode/
+=======
+>>>>>>> d48709cb71d808787551e4f4136288cc8666bc8c
