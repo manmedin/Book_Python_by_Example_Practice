@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# External Files that use the main program
+*.txt
+*.csv
+
+#Folder for debug in vscode
+.vscode/
