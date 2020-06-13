@@ -797,44 +797,93 @@
 # main()
 
 ##############challenges 120##############
-import random
+# import random
 
-log = []
-print ('1) Addition')
-print ('2) Substraction')	
-execute = int(input('Enter 1 or 2: '))
+# log = []
+# print ('1) Addition')
+# print ('2) Substraction')	
+# execute = int(input('Enter 1 or 2: '))
 
-def addition():
-	num1 = random.randint(5,20)
-	num2 = random.randint(5,20)
-	ansum=int(input('\n' + str(num1) + ' + ' + str(num2) + ' = '))
-	log.append(ansum)
-	log.append(num1 +num2)
-	#print ('Your answer is ' + str(log[0]) + ' and the righ answer is ' + str(log[1]) )
-	return log
+# def addition():
+# 	num1 = random.randint(5,20)
+# 	num2 = random.randint(5,20)
+# 	ansum=int(input('\n' + str(num1) + ' + ' + str(num2) + ' = '))
+# 	log.append(ansum)
+# 	log.append(num1 +num2)
+# 	#print ('Your answer is ' + str(log[0]) + ' and the righ answer is ' + str(log[1]) )
+# 	return log
 
-def subsctraction():
-	num1 = random.randint(25,50)
-	num2 = random.randint(1,25)
-	ansub = int(input('\n' + str(num1) + ' - ' + str(num2) + ' = '))
-	log.insert(0,ansub)
-	log.insert(1,num1-num2)
-	return log
+# def subsctraction():
+# 	num1 = random.randint(25,50)
+# 	num2 = random.randint(1,25)
+# 	ansub = int(input('\n' + str(num1) + ' - ' + str(num2) + ' = '))
+# 	log.insert(0,ansub)
+# 	log.insert(1,num1-num2)
+# 	return log
 
-def checkanswer():
-	if log[0] != log[1]:
-		print('Incorrect, the answer is: ' + str(log[1]))
-	else:
-		print ('Your are right...Congratulations!!')
+# def checkanswer():
+# 	if log[0] != log[1]:
+# 		print('Incorrect, the answer is: ' + str(log[1]))
+# 	else:
+# 		print ('Your are right...Congratulations!!')
+
+# def main():
+# 	if execute == 1:
+# 		addition()
+# 		checkanswer()
+# 	elif execute ==2:
+# 		subsctraction()
+# 		checkanswer()
+# 	else:
+# 		print ('Only type 1 or 2')
+
+# main()		
+
+##############challenges 121##############
+def show_list(list_name):
+	print('\nThe list currently contains the next names: ')
+	for name in list_name:
+		print(name)
+
+def add_name(list_name):
+	name_to_add = str(input('Type the new name to add: ')).title()
+	list_name.append(name_to_add)
+
+def del_name(list_name):
+	name_to_del = str(input('Type the name to delete from list: ')).title()
+	list_name.remove(name_to_del)
+
+def change_name(list_name):
+	name_to_change = str(input('Type the name of the list to change: '))
+	new_name_to_list = str(input('Type the new name to add to the list: '))
+	index_to_change = list_name.index(name_to_change.title())
+	for name in list_name:
+		if name == name_to_change.title():
+			list_name[index_to_change] = new_name_to_list.title()
 
 def main():
-	if execute == 1:
-		addition()
-		checkanswer()
-	elif execute ==2:
-		subsctraction()
-		checkanswer()
-	else:
-		print ('Only type 1 or 2')
+	list_name = ['Manuel','Nidia','Alvaro','Leandro','Grima','Eloy','Sheyla']
+	enable = True
+	while enable == True:
+		print('\n1) Add a name.' +
+			'\n2) Change a name.' +
+			'\n3) Delete a name.'+
+			'\n4) View all the names.'
+			'\n5) End the program.')
+		selection = str(input('Select an option: '))
+		if selection =='1':
+			add_name(list_name)
+		elif selection == '2':
+			change_name(list_name)
+		elif selection == '3':
+			del_name(list_name)
+		elif selection == '4':
+			show_list(list_name)
+		elif selection == '5':
+			enable = False
+		else :
+			print('Enter only a valid option from 1 to 5')
 
-main()		
+main()
+
+
