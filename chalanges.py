@@ -886,7 +886,76 @@
 
 # main()
 
-##############challenges 122##############
+##############Remember working with external files (csv)##############
+#import csv
+# externalcsv = 'ExternalFiles/Books.csv'
+# with open(externalcsv) as externalfile:
+# 	#se convierte cada linea a un string entero (sin modulo).
+	# linesfile = externalfile.readlines()
+	# for line in linesfile:
+	# 	print (line.strip())
+
+	#se convierten las lineas a listas en formato csv.
+	#se debe usar el modulo csv (import csv).
+	# reader = csv.reader(externalfile)
+	# for line in reader:
+	# 	print (line)
+
+	#se convierten cada linea a un string entero (sin modulos)
+	# for line in externalfile:
+	# 	print (line.strip())
+
+########################Challenge 122######################
+#import csv
+externalfile = 'ExternalFiles/Salaries.csv'
+
+def add_to_file():
+	with open(externalfile,'a') as salariesfile:
+		name = input('Enter the name: ')
+		salary = input('Enter the salary: ')
+		new_reg = name.title() + ',' + salary + '\n'
+		salariesfile.write(new_reg)
+		
+def view_records():
+	print('\n')
+	with open(externalfile) as salariesfile:
+		for register in salariesfile:
+			print(register.strip())
+
+def main():
+	continues = True
+	while continues:
+		print('\n1) Add to file.'
+			'\n2) View all records.'
+			'\n3) Quit program.')
+		select = int(input('Select one option: '))
+		if select == 1:
+			add_to_file()
+		elif select == 2:
+			view_records()
+		elif select == 3:
+			continues = False
+		else :
+			print('\nSelect a valid option.')
+
+main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ##############Tkinter GUI learning##############

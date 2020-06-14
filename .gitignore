@@ -137,3 +137,7 @@ dmypy.json
 .vscode/
 =======
 >>>>>>> d48709cb71d808787551e4f4136288cc8666bc8c
+
+#File DS_Store (created by vscode) and an external folder.
+.DS_Store
+ExternalFiles/
