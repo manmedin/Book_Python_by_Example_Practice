@@ -840,50 +840,80 @@
 # main()		
 
 ##############challenges 121##############
-def show_list(list_name):
-	print('\nThe list currently contains the next names: ')
-	for name in list_name:
-		print(name)
+# def show_list(list_name):
+# 	print('\nThe list currently contains the next names: ')
+# 	for name in list_name:
+# 		print(name)
 
-def add_name(list_name):
-	name_to_add = str(input('Type the new name to add: ')).title()
-	list_name.append(name_to_add)
+# def add_name(list_name):
+# 	name_to_add = str(input('Type the new name to add: ')).title()
+# 	list_name.append(name_to_add)
 
-def del_name(list_name):
-	name_to_del = str(input('Type the name to delete from list: ')).title()
-	list_name.remove(name_to_del)
+# def del_name(list_name):
+# 	name_to_del = str(input('Type the name to delete from list: ')).title()
+# 	list_name.remove(name_to_del)
 
-def change_name(list_name):
-	name_to_change = str(input('Type the name of the list to change: '))
-	new_name_to_list = str(input('Type the new name to add to the list: '))
-	index_to_change = list_name.index(name_to_change.title())
-	for name in list_name:
-		if name == name_to_change.title():
-			list_name[index_to_change] = new_name_to_list.title()
+# def change_name(list_name):
+# 	name_to_change = str(input('Type the name of the list to change: '))
+# 	new_name_to_list = str(input('Type the new name to add to the list: '))
+# 	index_to_change = list_name.index(name_to_change.title())
+# 	for name in list_name:
+# 		if name == name_to_change.title():
+# 			list_name[index_to_change] = new_name_to_list.title()
 
-def main():
-	list_name = ['Manuel','Nidia','Alvaro','Leandro','Grima','Eloy','Sheyla']
-	enable = True
-	while enable == True:
-		print('\n1) Add a name.' +
-			'\n2) Change a name.' +
-			'\n3) Delete a name.'+
-			'\n4) View all the names.'
-			'\n5) End the program.')
-		selection = str(input('Select an option: '))
-		if selection =='1':
-			add_name(list_name)
-		elif selection == '2':
-			change_name(list_name)
-		elif selection == '3':
-			del_name(list_name)
-		elif selection == '4':
-			show_list(list_name)
-		elif selection == '5':
-			enable = False
-		else :
-			print('Enter only a valid option from 1 to 5')
+# def main():
+# 	list_name = ['Manuel','Nidia','Alvaro','Leandro','Grima','Eloy','Sheyla']
+# 	enable = True
+# 	while enable == True:
+# 		print('\n1) Add a name.' +
+# 			'\n2) Change a name.' +
+# 			'\n3) Delete a name.'+
+# 			'\n4) View all the names.'
+# 			'\n5) End the program.')
+# 		selection = str(input('Select an option: '))
+# 		if selection =='1':
+# 			add_name(list_name)
+# 		elif selection == '2':
+# 			change_name(list_name)
+# 		elif selection == '3':
+# 			del_name(list_name)
+# 		elif selection == '4':
+# 			show_list(list_name)
+# 		elif selection == '5':
+# 			enable = False
+# 		else :
+# 			print('Enter only a valid option from 1 to 5')
 
-main()
+# main()
+
+##############challenges 122##############
 
 
+##############Tkinter GUI learning##############
+# from tkinter import *
+# def call():
+# 	msg = Label(window, text = 'You pressed the button')
+# 	msg.place(x = 30, y =20)
+# 	button['bg'] = 'black'
+# 	button['fg'] = 'yellow'
+
+# window = Tk()
+# window.title('Test Window')
+# window.geometry('450x130')
+# # label = Label(text = 'message text')
+# # label.place(x = 40, y = 100) # sin esta linea el mensaje de la linea anterior no se muestra.
+# button = Button(text = 'Press me', command = call)
+# button.place(x =70, y = 50, width=70, height=20)
+# window.mainloop()
+
+# from tkinter import *
+# window = Tk()
+# window.title('Window Example')
+# #window.geometry('400x400')
+# #label = Label(text = 'Enter number: ')
+# #label.place(x=100,y=100)
+# entry_box = Entry(bd = 3,bg = 'white',justify = CENTER)
+# entry_box.pack(side=LEFT)
+# output_box = Message(text = 'Message test', width = 85, bg = 'black', fg = 'white', bd = 4, relief = GROOVE)
+# output_box.pack(side=RIGHT)	
+# window.mainloop()
