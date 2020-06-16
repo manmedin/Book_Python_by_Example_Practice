@@ -906,57 +906,90 @@
 	# 	print (line.strip())
 
 ########################Challenge 122######################
-#import csv
-externalfile = 'ExternalFiles/Salaries.csv'
+# #import csv #--> it's not neccesary to import this module for this challenge.
+# externalfile = 'ExternalFiles/Salaries.csv'
 
-def add_to_file():
-	with open(externalfile,'a') as salariesfile:
-		name = input('Enter the name: ')
-		salary = input('Enter the salary: ')
-		new_reg = name.title() + ',' + salary + '\n'
-		salariesfile.write(new_reg)
+# def add_to_file():
+# 	with open(externalfile,'a') as salariesfile:
+# 		name = input('Enter the name: ')
+# 		salary = input('Enter the salary: ')
+# 		new_reg = name.title() + ',' + salary + '\n'
+# 		salariesfile.write(new_reg)
 		
-def view_records():
-	print('\n')
-	with open(externalfile) as salariesfile:
-		for register in salariesfile:
-			print(register.strip())
+# def view_records():
+# 	print('\n')
+# 	with open(externalfile) as salariesfile:
+# 		for register in salariesfile:
+# 			print(register.strip())
 
-def main():
-	continues = True
-	while continues:
-		print('\n1) Add to file.'
-			'\n2) View all records.'
-			'\n3) Quit program.')
-		select = int(input('Select one option: '))
-		if select == 1:
-			add_to_file()
-		elif select == 2:
-			view_records()
-		elif select == 3:
-			continues = False
-		else :
-			print('\nSelect a valid option.')
+# def main():
+# 	continues = True
+# 	while continues:
+# 		print('\n1) Add to file.'
+# 			'\n2) View all records.'
+# 			'\n3) Quit program.')
+# 		select = int(input('Select one option: '))
+# 		if select == 1:
+# 			add_to_file()
+# 		elif select == 2:
+# 			view_records()
+# 		elif select == 3:
+# 			continues = False
+# 		else :
+# 			print('\nSelect a valid option.')
 
-main()
+# main()
 
+########################Challenge 123######################
+# #import csv #--> it's not neccesary to import this module for this challenge.
+# externalfile = 'ExternalFiles/Salaries.csv'
 
+# def add_to_file():
+# 	with open(externalfile,'a') as salariesfile:
+# 		name = input('Enter the name: ')
+# 		salary = input('Enter the salary: ')
+# 		new_reg = name.title() + ',' + salary + '\n'
+# 		salariesfile.write(new_reg)
+		
+# def view_records():
+# 	print('\n')
+# 	with open(externalfile) as salariesfile:
+# 		for register in salariesfile:
+# 			print(register.strip())
 
+# def del_record():
+# 	list_file =[]
+# 	line_to_delete =int(input('\nEnter the line to delete (starting in 0): '))
+# 	count = 0
+# 	with open(externalfile) as salariefile:
+# 		for register in salariefile:
+# 			if line_to_delete != count:
+# 				list_file.append(register)
+# 			count +=1
+# 	with open(externalfile,'w') as salariefile:
+# 		for element in list_file:
+# 			salariefile.write(element)
 
+# def main():
+# 	continues = True
+# 	while continues:
+# 		print('\n1) Add to file.'
+# 			'\n2) View all records.'
+# 			'\n3) Delete a record.'
+# 			'\n4) Quit program.')
+# 		select = int(input('Select one option: '))
+# 		if select == 1:
+# 			add_to_file()
+# 		elif select == 2:
+# 			view_records()
+# 		elif select == 3:
+# 			del_record()	
+# 		elif select == 4:
+# 			continues = False
+# 		else :
+# 			print('\nSelect a valid option.')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# main()
 
 ##############Tkinter GUI learning##############
 # from tkinter import *
